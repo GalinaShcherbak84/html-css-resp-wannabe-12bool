@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+  }
+  .row {
+    /* width: 992px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-top: 100px;
+  }
+  
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    padding: 10px;
+  }
+  
+  #lezioni .row img {
+    /* per centrare orizzontalmente */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #lezioni {
+    text-align: center;
+  }
+  
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    padding: 10px;
+  }
+  
+  #steps {
+    text-align: center;
+  }
+  
+  /* BLOCCO PERCHE */
+  #why {
+    text-align: center;
+  }
+  
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin-top: 80px;
+    padding: 10px;
+  }
+  
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 30px
+  }
+  
+  /* COMMON */
+  /* .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  } */
+  
+  .container.grey {
+    background-color: #f9f9f9;
+  }
+  
+  img {
+    height: 200px;
+  }
+  
+  /* .clear {
+    clear: both;
+  } */
+  
+  /* da 0 px a 767 px - xs*/
+  @media screen and (min-width:0px){
+    /* general */
+    #why .row>.first, 
+    #why .row>.second, 
+    #why .row>.third {
+        margin-top: 20px;
+    }
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+      border-bottom: 1px solid black;
+    }
+    img{
+      height: 100px;
+    }
+    #steps{
+      background-color: #428bca;
+      padding-top: 0.67em;
+    }
+    .row {
+      margin-top: 20px;
+  }
+  }
+  /* da 768 px a 991 - md */
+  @media screen and (min-width:768px){
+    /* general */
+    #steps .row img {
+      height: 110px;
+    }
+    #lezioni .row img {
+      height: 130px;
+    }
+    #why .row img{
+      height: 200px;
+    }
+    .row {
+      margin-top: 40px;
+    }
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+      border-bottom: none;
+    }
+    #steps{
+      background-color: white;
+      padding-top: 0.67em;
+    }
+    
+  }
+    /* da 992 in su - lg */
+  @media screen and (min-width:992px){
+    /* general */
+    img{
+      height: 200px;
+    }
+    #steps .row>.left,
+    #steps .row>.central,
+    #steps .row>.right {
+      border-bottom: none;
+    }
+    #steps{
+      background-color:white;
+      padding-top:0;
+    }
+  }
